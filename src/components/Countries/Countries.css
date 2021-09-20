@@ -1,0 +1,21 @@
+.countries{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+span{
+    color: rgb(235, 142, 21);
+}
+
+@media only screen and (max-width: 475px) {
+    .countries{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .countries{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
